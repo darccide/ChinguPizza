@@ -14,7 +14,7 @@ git clone git@github.com:darccide/ChinguPizza
 cd ChinguPizza
 ```
 
-Configure your own config.js. The credentials that are provided in the code will not work for you. They are for illustration purposes only. You will need to get your own credentials from Stripe and Mailgun. You will also need your own SSL cert.pem and key.pem files if you want to use https.
+Configure your own config.js. The credentials that are provided in the code will not work for you. They are for illustration purposes only. You will need to get your own credentials from Stripe and Mailgun. You will also need your own SSL cert.pem and key.pem files if you want to use https. I suggest you store those in a file named 'https' so you know why they exist. Use the following command to create these files: `openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -nodes -days 365 -subj '/CN=localhost'`. If you are curious https://www.shellhacks.com/create-self-signed-certificate-openssl/ has a more in-depth description about these generated files and the command as well.
 
 
 Run the project :
@@ -28,7 +28,7 @@ Your app should now be running on localhost:3030 and localhost:3031 for https.
 * [Node](https://nodejs.org/en/)
 
 ## Author
-Steven Thomson is a Fullstack Developer who recently transistioned back to the U.S. If you would like to contact him:
+Steven Thomson is a Fullstack Developer. If you would like to contact him:
 
  * steven.thomson88@gmail.com
  * [Steven Thomson's LinkedIn](https://www.linkedin.com/in/steventhomson1988/)
