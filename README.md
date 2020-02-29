@@ -14,7 +14,7 @@ git clone git@github.com:darccide/ChinguPizza
 cd ChinguPizza
 ```
 
-Configure your own config.js. The credentials that are provided in the code will not work for you. They are for illustration purposes only. You will need to get your own credentials from Stripe and Mailgun. You will also need your own SSL credentials.
+Configure your own config.js. The credentials that are provided in the code will not work for you. They are for illustration purposes only. You will need to get your own credentials from Stripe and Mailgun. You will also need your own SSL cert.pem and key.pem files if you want to use https.
 
 
 Run the project :
